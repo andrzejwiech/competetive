@@ -1,5 +1,9 @@
 package com.wiech.algorithms.dynamicprogramming.easy;
 
+/**
+* Based on Kadane's algorithm
+*/
+
 public class MaximumSubArray {
 
     public int max(int[] arr) {
