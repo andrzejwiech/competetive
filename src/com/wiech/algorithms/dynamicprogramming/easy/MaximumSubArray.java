@@ -1,8 +1,8 @@
 package com.wiech.algorithms.dynamicprogramming.easy;
 
 /**
-* Based on Kadane's algorithm -> O(n)
-*/
+ * Based on Kadane's algorithm -> O(n)
+ */
 public class MaximumSubArray {
 
     public int max(int[] arr) {

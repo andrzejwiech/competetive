@@ -6,8 +6,8 @@ import static java.lang.Math.sqrt;
 import java.util.Arrays;
 
 /**
- * 1119. Metro -> http://acm.timus.ru/problem.aspx?space=1&num=1119
-*/
+ * 119. Metro -> http://acm.timus.ru/problem.aspx?space=1&num=1119
+ */
 public class Metro {
 
     public double cost(int n, int m, int[][] d) {
