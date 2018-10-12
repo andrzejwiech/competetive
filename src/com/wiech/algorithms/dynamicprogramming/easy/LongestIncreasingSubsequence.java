@@ -1,8 +1,8 @@
 package com.wiech.algorithms.dynamicprogramming.easy;
 
+import static java.lang.Math.max;
 import java.util.Arrays;
 
-import static java.lang.Math.max;
 /*
 * O(nlog(n))
 * */
