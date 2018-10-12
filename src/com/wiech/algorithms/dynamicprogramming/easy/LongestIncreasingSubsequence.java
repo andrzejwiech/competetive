@@ -3,9 +3,9 @@ package com.wiech.algorithms.dynamicprogramming.easy;
 import static java.lang.Math.max;
 import java.util.Arrays;
 
-/*
+/**
 * O(nlog(n))
-* */
+*/
 public class LongestIncreasingSubsequence {
 
     public int longest(int[] arr) {
