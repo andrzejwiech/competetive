@@ -1,4 +1,4 @@
-package com.wiech.algorithms.gener.medium;
+package com.wiech.algorithms.general.medium;
 
 import java.util.Stack;
 
