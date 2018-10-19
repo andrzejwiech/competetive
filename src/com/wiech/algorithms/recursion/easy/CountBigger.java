@@ -3,7 +3,7 @@ package com.wiech.algorithms.recursion.easy;
 public class CountBigger {
 
     public int count(int n, int k) {
-        if (n == 0 && k == 0)
+        if (n == k)
             return 1;
         else if (n == 0)
             return 0;
