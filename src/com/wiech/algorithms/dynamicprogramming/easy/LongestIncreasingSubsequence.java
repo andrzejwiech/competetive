@@ -4,7 +4,7 @@ import static java.lang.Math.max;
 import java.util.Arrays;
 
 /**
- * O(nlog( n))
+ * O(n^2)
  */
 public class LongestIncreasingSubsequence {
 
