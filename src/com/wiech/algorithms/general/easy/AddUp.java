@@ -1,4 +1,4 @@
-package com.wiech.algorithms.general.medium.easy;
+package com.wiech.algorithms.general.easy;
 
 import java.util.HashSet;
 import java.util.Set;
