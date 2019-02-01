@@ -1,7 +1,3 @@
-/*
- * @author Andrzej Wiech
- */
-
 package com.wiech.algorithms.general.easy;
 
 import java.util.HashSet;
