@@ -1,12 +1,17 @@
+/*
+ * @author Andrzej Wiech
+ */
+
 package com.wiech.algorithms.general.easy;
 
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * @author Andrzej Wiech
+ */
 class AddUp {
-    /**
-     * @author Andrzej Wiech
-     */
+
     boolean hasPairWitSum(int values[], int sum) {
 
         Set<Integer> compounds = new HashSet<>();
