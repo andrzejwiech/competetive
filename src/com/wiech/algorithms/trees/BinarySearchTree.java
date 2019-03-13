@@ -23,7 +23,6 @@ class BinarySearchTree {
         return node;
     }
 
-
     private void print(Node node) {
         if (node == null) {
             return;
