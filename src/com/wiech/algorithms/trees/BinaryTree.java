@@ -16,6 +16,23 @@ class BinaryTree {
         }
         return isSymmetric(root.left, root.right);
     }
+    boolean isTheSame(Node node) {
+
+        return isTheSame(root, node);
+    }
+
+    int height() {
+        return height(root);
+    }
+
+    private int height(Node root) {
+        if (root == null)
+            return 0;
+        int heightLeft = height(root.left) + 1;
+        int heightRight = height(root.right) + 1;
+
+        return max(heightLeft, heightRight);
+    }
 
     private boolean isSymmetric(Node left, Node right) {
         if (left == null && right == null) {
@@ -40,23 +57,6 @@ class BinaryTree {
         return node;
     }
 
-    boolean isTheSame(Node node) {
-
-        return isTheSame(root, node);
-    }
-
-    int height() {
-        return height(root);
-    }
-
-    private int height(Node root) {
-        if (root == null)
-            return 0;
-        int heightLeft = height(root.left) + 1;
-        int heightRight = height(root.right) + 1;
-
-        return max(heightLeft, heightRight);
-    }
 
     private boolean isTheSame(Node one, Node two) {
 
