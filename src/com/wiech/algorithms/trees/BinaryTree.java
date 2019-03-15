@@ -14,8 +14,9 @@ class BinaryTree {
     }
 
     private Node reverse(Node node) {
-        if (node == null)
+        if (node == null) {
             return null;
+        }
         Node tmp = node.left;
         node.left = node.right;
         node.right = tmp;
@@ -48,12 +49,13 @@ class BinaryTree {
     }
 
     private boolean isTheSame(Node one, Node two) {
-        if (one == null && two == null)
+        if (one == null && two == null) {
             return true;
-        else if (one == null || two == null)
+        } else if (one == null || two == null) {
             return false;
-        else if (one.value != two.value)
+        } else if (one.value != two.value) {
             return false;
+        }
         return isTheSame(one.left, two.left) && isTheSame(one.right, two.right);
     }
 
@@ -80,8 +82,12 @@ class BinaryTree {
         while (!queue.isEmpty()) {
             Node current = queue.poll();
             System.out.println(current.value);
-            if (current.left != null) queue.add(current.left);
-            if (current.right != null) queue.add(current.right);
+            if (current.left != null) {
+                queue.add(current.left);
+            }
+            if (current.right != null) {
+                queue.add(current.right);
+            }
         }
     }
 }
