@@ -11,7 +11,6 @@ public class StringPermutation {
             System.out.println(value);
             return;
         }
-
         for (int i = start; i < value.length; i++) {
             swap(start, i, value);
             permute(start + 1, value);
