@@ -9,6 +9,5 @@ public class CountBigger {
             return 0;
         else
             return (n % 10 >= k ? 1 : 0) + count(n / 10, k);
-
     }
 }

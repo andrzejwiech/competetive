@@ -2,6 +2,7 @@ package com.wiech.algorithms.trees;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 import static java.lang.Math.max;
 
@@ -89,5 +90,68 @@ class BinaryTree {
                 queue.add(current.right);
             }
         }
+    }
+
+    void breadthFirstTraversalReversed() {
+        if (root == null) {
+            return;
+        }
+        Queue<Node> queue = new LinkedList<>();
+        Stack<Node> stack = new Stack<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node current = queue.poll();
+            stack.push(current);
+            if (current.right != null) {
+                queue.add(current.right);
+            }
+            if (current.left != null) {
+                queue.add(current.left);
+            }
+        }
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop().value);
+        }
+    }
+
+    void specificOrder() {
+        specificOrder(root);
+    }
+
+    private void specificOrder(Node node) {
+
+        System.out.println(node.value);
+
+        Queue<Node> queue1 = new LinkedList<>();
+        Queue<Node> queue2 = new LinkedList<>();
+
+        queue1.add(node.left);
+        queue2.add(node.right);
+
+        while (!queue1.isEmpty()) {
+
+            Node node1 = queue1.poll();
+            System.out.println(node1.value);
+            if (node1.left != null) {
+                queue1.add(node1.left);
+            }
+            if (node1.right != null) {
+                queue1.add(node1.right);
+            }
+
+            Node node2 = queue2.poll();
+            System.out.println(node2.value);
+            if (node2.left != null) {
+                queue2.add(node2.right);
+            }
+            if (node2.right != null) {
+                queue2.add(node2.left);
+            }
+
+
+        }
+
+
     }
 }
