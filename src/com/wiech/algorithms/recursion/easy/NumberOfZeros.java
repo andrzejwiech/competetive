@@ -4,10 +4,6 @@ import static java.lang.Math.abs;
 
 public class NumberOfZeros {
 
-    public static void main(String[] args) {
-        System.out.println(new NumberOfZeros().count(200));
-    }
-
     public int count(int n) {
         if (n == 0)
             return 1;

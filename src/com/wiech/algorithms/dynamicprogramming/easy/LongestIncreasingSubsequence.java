@@ -1,10 +1,7 @@
 package com.wiech.algorithms.dynamicprogramming.easy;
 
 import static java.lang.Math.max;
-
-import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
 
 public class LongestIncreasingSubsequence {
 

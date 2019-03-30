@@ -1,30 +1,23 @@
 package com.wiech.algorithms.general.easy;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Andrzej Wiech
  */
 class AddUp {
 
-    public static void main(String[] args) {
-        test();
-    }
+    boolean hasPairWitSum(int values[], int sum) {
 
-    static void test() {
+        Set<Integer> compounds = new HashSet<>();
 
-        int[] flights = new int[] {1, 2, 3, 4, 5};
-
-        for(int flight: flights) {
-            if (flight == 1){
-                System.out.println("Bravo lecisz pierwszym lotem");
-            } else {
-                System.out.println("Lot number " + flight);
+        for (int value : values) {
+            if (compounds.contains(value)) {
+                return true;
             }
-
+            compounds.add(sum - value);
         }
-
-
+        return false;
     }
 }

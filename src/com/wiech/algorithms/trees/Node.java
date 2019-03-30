@@ -1,12 +1,12 @@
 package com.wiech.algorithms.trees;
 
-public class Node {
+class Node {
 
     int value;
     Node left;
-    public Node right;
+    Node right;
 
-   public Node(int value) {
+    Node(int value) {
         this.value = value;
     }
 }
