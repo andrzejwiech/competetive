@@ -10,7 +10,7 @@ public class LongestIncreasingSequence {
         if (n == sequence.length) {
             return 0;
         }
-        if (sequence[n] <= last) {˚
+        if (sequence[n] <= last) {
             return max(sequence, n + 1, last);
         }
         return Math.max(max(sequence, n + 1, last), 1 + max(sequence, n + 1, sequence[n]));
